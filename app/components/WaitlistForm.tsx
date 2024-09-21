@@ -32,7 +32,7 @@ const WaitlistForm: React.FC = () => {
             return
         }
 
-        setMessage("You have been successfully added to waitlist. You will hear from us soon!")
+        setMessage("You have been successfully added to the waitlist. You will hear from us soon!")
         setMessageType("success");
         setEmail('');
         setLoading(false);
@@ -41,17 +41,17 @@ const WaitlistForm: React.FC = () => {
     return (
         <section id="waitlist" className="bg-brand-secondary h-screen overflow-hidden">
             <div className="relative flex flex-col lg:flex-row w-full h-full items-center justify-center overflow-hidden rounded-lg bg-background p-6 lg:p-20">
-                <div className="flex flex-col w-full h-full items-center shadow-xl lg:p-10 rounded-xl bg-white z-10 space-y-6">
-                    <h2 className="text-2xl lg:text-4xl font-medium text-center text-blue lg:text-left tracking-tighter">
+                <div className="flex flex-col w-full h-full items-center justify-center shadow-xl p-10 rounded-xl bg-white border z-10 space-y-6">
+                    <h2 className="text-3xl lg:text-4xl font-medium text-center text-blue lg:text-left tracking-tighter">
                         Join Our Waitlist
                     </h2>
-                    <p className="text-xl text-brand-dark tracking-tight">
+                    <p className="text-xl text-brand-dark tracking-tight text-center">
                         Be the first to enhance your onboarding experience with our AI assistant.
                     </p>
                     <form onSubmit={handleWaitlistSubmission} className='w-full flex flex-col items-center space-y-3'>
                         {messageType === "success" ? (
                             // Success message, input and button are removed
-                            <p className="text-green-800 text-lg font-medium">
+                            <p className="text-green-800 text-lg font-medium text-center">
                                 {message}
                             </p>
                         ) : (
@@ -73,7 +73,7 @@ const WaitlistForm: React.FC = () => {
                                 </button>
                                 {/* Error message shown in red */}
                                 {message && (
-                                    <p className={`text-lg font-medium ${messageType === "error" ? "text-red-500" : ""}`}>
+                                    <p className={`text-lg font-medium text-center ${messageType === "error" ? "text-red-500" : ""}`}>
                                         {message}
                                     </p>
                                 )}

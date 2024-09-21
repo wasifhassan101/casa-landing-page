@@ -32,7 +32,7 @@ const features = [
 
 const Features: React.FC = () => {
     return (
-        <section id="features" className="py-20 bg-brand-light relative overflow-hidden h-screen">
+        <section id="features" className="py-20 bg-brand-light relative overflow-hidden lg:h-screen">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-medium text-center mb-12 tracking-tight text-blue">
                     What is Casa.ai?
@@ -45,7 +45,7 @@ const Features: React.FC = () => {
                                     <div className="text-2xl font-semibold tracking-[-0.02em] text-brand-primary">
                                         0{index + 1}
                                     </div>
-                                    <h3 className="text-2xl font-semibold tracking-[-0.02em] bg-gradient-to-b from-brand-primary to-brand-accent bg-clip-text text-transparent">
+                                    <h3 className="text-2xl font-semibold tracking-[-0.02em] bg-gradient-to-b from-brand-primary to-brand-accent bg-clip-text text-black">
                                         {feature.title}
                                     </h3>
                                 </div>
