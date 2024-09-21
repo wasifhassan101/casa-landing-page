@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Casa.ai",
-  description: "Completely Automated SUpport Agent",
+  description: "Completely Automated Support Agent",
 };
 
 export default function RootLayout({
