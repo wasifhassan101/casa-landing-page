@@ -1,0 +1,314 @@
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.logoAccent {
+    color: #10b981;
+}
+
+.navLinks {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navLinks a {
+    font-size: 1rem;
+    color: #4b5563;
+    transition: color 0.2s ease;
+}
+
+.navLinks a:hover {
+    color: #10b981;
+}
+
+.navCtaButton {
+    padding: 0.5rem 1rem;
+    background-color: #10b981;
+    color: #ffffff;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.navCtaButton:hover {
+    background-color: #059669;
+}
+
+/* Main Container */
+.main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heroContent {
+    flex: 1;
+    min-width: 300px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.25rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+.ctaButton {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(90deg, #10b981, #34d399);
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.ctaButton:hover {
+    background: linear-gradient(90deg, #059669, #10b981);
+}
+
+.heroImage {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.heroImage img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 2rem;
+    background-color: #f3f4f6;
+}
+
+.features h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #111827;
+    margin-bottom: 3rem;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featureItem {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.featureItem:hover {
+    transform: translateY(-5px);
+}
+
+.featureItem img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.featureItem h3 {
+    font-size: 1.25rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.featureItem p {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* Integration Section */
+.integration {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.integration h2 {
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.integration p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.ctaButtonSecondary {
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid #10b981;
+    color: #10b981;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.ctaButtonSecondary:hover {
+    background-color: #10b981;
+    color: #ffffff;
+}
+
+/* Call to Action Section */
+.ctaSection {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(90deg, #10b981, #34d399);
+    color: #ffffff;
+}
+
+.ctaSection h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ctaSection p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.waitlistForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.waitlistForm input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.waitlistForm button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #10b981;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.waitlistForm button:hover {
+    background-color: #e5e7eb;
+}
+
+/* Footer */
+.footer {
+    background-color: #1f2937;
+    color: #d1d5db;
+    padding: 2rem;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footerLogo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footerLinks a {
+    color: #9ca3af;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.footerLinks a:hover {
+    color: #ffffff;
+}
+
+.footer p {
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .heroImage img {
+        max-width: 100%;
+    }
+
+    .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .waitlistForm {
+        flex-direction: column;
+    }
+
+    .waitlistForm input,
+    .waitlistForm button {
+        max-width: none;
+        width: 100%;
+    }
+}
