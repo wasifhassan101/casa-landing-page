@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from 'react';
+import logoImg from "@/public/logo.png";
+import Image from 'next/image';
 
 const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -17,10 +19,14 @@ const Navbar: React.FC = () => {
     return (
         <nav className="w-full z-50 absolute top-0 bg-white">
             <div className="container mx-auto px-6 py-3 flex justify-between items-center">
-                <div className="space-x-2 flex items-center">
-                    <a href="#" className="text-3xl font-medium tracking-tighter text-blue">
+                <div className="space-x-2 flex items-center justify-center">
+                    <div className='bg-black h-8 w-8 flex items-center justify-center rounded-[50%]'>
+                        <p className='font-bold text-white'>C</p>
+                    </div>
+                    <p
+                        className="text-3xl font-medium tracking-tighter text-blue flex items-center">
                         casa.ai
-                    </a>
+                    </p>
                 </div>
 
                 {/* Desktop Menu */}
